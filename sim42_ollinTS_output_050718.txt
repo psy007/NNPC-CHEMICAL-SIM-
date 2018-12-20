@@ -1,0 +1,1336 @@
+/home/dat-asset-227/envs/sim42_using_py2/bin/python /home/dat-asset-227/code/sim42/ollin/Example/myTestExp.py
+################### STARTS ACCESSING DATABASE #######################
+('Database path (dBpath) in local: ', '/home/dat-asset-227/code/sim42/ollin/DataBase/')
+('Database name (dBname): ', 'data.db')
+
+Loading Data Base data.db
+('Db connetion obj: ', <sqlite3.Connection object at 0x7f5e9d5df200>)
+('Cursor Object creation is done: ', <sqlite3.Cursor object at 0x7f5e9d60a1f0>)
+\..........
+################### ENDS ACCESSING DATABASE #######################
+OllinTS has been loaded
+
+('Given thermodynamic model Name as : ', 'PR')
+Equation Of State(EOS) for thermodynamic model (PR) as:  PR
+('Pressure Vapor(PV) equation: ', 'ANTOINE')
+###### AddModel() for (PR) ######
+########################### STARTS FINDING OF PUBLIC VARS(Db cols name) FOR PV MODEL (ANTOINE) AND EOS MODEL(PR)################
+############################ STARTS exec of LoadPresureModel(PV=ANTOINE )###########################
+('load equation for pressure model: ', 'ANTOINE')
+('PresureVapor.Equation.keys()', ['HARLACHER', 'ANTOINE'])
+('I will call ', 'Antoine Equation', '()')
+('Needed variables for PV model:', 'Antoine Equation', '() as follows:', ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C'])
+############################ ENDS exec of LoadPresureModel(PV=ANTOINE )###########################
+############################ STARTS exec of LoadEOSModel(model=PengRobinson )###########################
+('LoadEOSModel module::', <module 'ollin.CES' from '/home/dat-asset-227/code/sim42/ollin/CES/__init__.pyc'>)
+('LoadEOSModel model::', 'PengRobinson')
+('LoadEOSModel module path::', ['/home/dat-asset-227/code/sim42/ollin/CES'])
+('LoadEOSModel module fullName::', 'ollin.CES.PengRobinson')
+('Calling of EOS model from lang as :', <class PengRobinson.Model at 0x7f5e9d695f58>)
+('Needed public variables from LoadPresureModel() are as::', ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C'])
+('ThermoCase class EOS attribute::', {'EOS': <ollin.EOS.eos.EOS instance at 0x7f5e9d693b48>, 'Thermo': <ollin.Thermodinamics.Thermodinamic.Thermo instance at 0x7f5e9d6a27a0>, 'PV': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f5eaa8ed5f0>, 'TagsOfConst': ['TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF']})
+('Needed public variables after LoadPresureModel() and LoadEOSModel() are as::', ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'])
+############################ ENDS exec of LoadEOSModel(model=PengRobinson )###########################
+### ThermoCase dict() for Given thermodynamic model Name (PR) as follows:
+{'Load': 0, 'NamePresureVap': 'ANTOINE', 'NameEOS': 'PengRobinson', 'Const': {}, 'library': [], 'EOS': <PengRobinson.Model instance at 0x7f5eaa8f0320>, 'PublicVars': ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'], 'Cases': [], 'PresureVap': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f5eaa8ed5f0>}
+{'Load': 0, 'NamePresureVap': 'ANTOINE', 'NameEOS': 'PengRobinson', 'Const': {}, 'library': [], 'EOS': <PengRobinson.Model instance at 0x7f5eaa8f0320>, 'PublicVars': ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'], 'Cases': [], 'PresureVap': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f5eaa8ed5f0>}
+('################### STARTING OF Add() WITH ITEMS AND CASE AS ', ['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE'], 'PR')
+('items::', ['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE'])
+('case::', 'PR')
+From DataBase.py we are in Dates() where items=IdKey and key=METHANE
+#######################################################################
+x_key METHANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(61,)
+#######################################################################
+result [[61]]
+component 61  METHANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=ETHANE
+#######################################################################
+x_key ETHANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(100,)
+#######################################################################
+result [[100]]
+component 100  ETHANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=PROPANE
+#######################################################################
+x_key PROPANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(132,)
+#######################################################################
+result [[132]]
+component 132  PROPANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=ISOBUTANE
+#######################################################################
+x_key ISOBUTANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(182,)
+#######################################################################
+result [[182]]
+component 182  ISOBUTANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-BUTANE
+#######################################################################
+x_key N-BUTANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(181,)
+#######################################################################
+result [[181]]
+component 181  N-BUTANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-PENTANE
+#######################################################################
+x_key N-PENTANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(223,)
+#######################################################################
+result [[223]]
+component 223  N-PENTANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-HEXANE
+#######################################################################
+x_key N-HEXANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(271,)
+#######################################################################
+result [[271]]
+component 271  N-HEXANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-HEPTANE
+#######################################################################
+x_key N-HEPTANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(308,)
+#######################################################################
+result [[308]]
+component 308  N-HEPTANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-OCTANE
+#######################################################################
+x_key N-OCTANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(354,)
+#######################################################################
+result [[354]]
+component 354  N-OCTANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-NONANE
+#######################################################################
+x_key N-NONANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(389,)
+#######################################################################
+result [[389]]
+component 389  N-NONANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-DECANE
+#######################################################################
+x_key N-DECANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(418,)
+#######################################################################
+result [[418]]
+component 418  N-DECANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-UNDECENE
+#######################################################################
+x_key N-UNDECENE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(428,)
+#######################################################################
+result [[428]]
+component 428  N-UNDECENE was add to PengRobinson
+('Final library for case (PR) as : ', ['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE'])
+################ In LoadConst, Load information from data base for the Model (case)
+('self.TheCase.keys()', ['PR'])
+('case: ', 'PR')
+('self.TheCase[case].library: ', ['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE'])
+From DataBase.py we are in Dates() where items=MoleWt and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(16.04,)
+x_key ETHANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(30.07,)
+x_key PROPANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(44.1,)
+x_key ISOBUTANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(58.12,)
+x_key N-BUTANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(58.12,)
+x_key N-PENTANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(72.15,)
+x_key N-HEXANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(86.18,)
+x_key N-HEPTANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(100.21,)
+x_key N-OCTANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(114.23,)
+x_key N-NONANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(128.26,)
+x_key N-DECANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(142.29,)
+x_key N-UNDECENE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(156.31,)
+#######################################################################
+result [[16.04, 30.07, 44.1, 58.12, 58.12, 72.15, 86.18, 100.21, 114.23, 128.26, 142.29, 156.31]]
+From DataBase.py we are in Dates() where items=LIQDEN and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(425,)
+x_key ETHANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(548,)
+x_key PROPANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(582,)
+x_key ISOBUTANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(557,)
+x_key N-BUTANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(579,)
+x_key N-PENTANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(626,)
+x_key N-HEXANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(659,)
+x_key N-HEPTANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(684,)
+x_key N-OCTANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(703,)
+x_key N-NONANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(718,)
+x_key N-DECANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(730,)
+x_key N-UNDECENE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(740,)
+#######################################################################
+result [[425, 548, 582, 557, 579, 626, 659, 684, 703, 718, 730, 740]]
+From DataBase.py we are in Dates() where items=ANT_A and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.22,)
+x_key ETHANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.66,)
+x_key PROPANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.73,)
+x_key ISOBUTANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.54,)
+x_key N-BUTANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.68,)
+x_key N-PENTANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.83,)
+x_key N-HEXANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.84,)
+x_key N-HEPTANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.87,)
+x_key N-OCTANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.94,)
+x_key N-NONANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.97,)
+x_key N-DECANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(16.01,)
+x_key N-UNDECENE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(16.05,)
+#######################################################################
+result [[15.22, 15.66, 15.73, 15.54, 15.68, 15.83, 15.84, 15.87, 15.94, 15.97, 16.01, 16.05]]
+From DataBase.py we are in Dates() where items=ANT_B and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(897.84,)
+x_key ETHANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(1511.42,)
+x_key PROPANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(1872.46,)
+x_key ISOBUTANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2032.73,)
+x_key N-BUTANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2154.9,)
+x_key N-PENTANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2477.07,)
+x_key N-HEXANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2697.55,)
+x_key N-HEPTANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2911.32,)
+x_key N-OCTANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(3120.29,)
+x_key N-NONANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(3291.45,)
+x_key N-DECANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(3456.8,)
+x_key N-UNDECENE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(3614.07,)
+#######################################################################
+result [[897.84, 1511.42, 1872.46, 2032.73, 2154.9, 2477.07, 2697.55, 2911.32, 3120.29, 3291.45, 3456.8, 3614.07]]
+From DataBase.py we are in Dates() where items=ANT_C and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-7.16,)
+x_key ETHANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-17.16,)
+x_key PROPANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-25.16,)
+x_key ISOBUTANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-33.15,)
+x_key N-BUTANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-34.42,)
+x_key N-PENTANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-39.94,)
+x_key N-HEXANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-48.78,)
+x_key N-HEPTANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-56.51,)
+x_key N-OCTANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-63.63,)
+x_key N-NONANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-71.33,)
+x_key N-DECANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-78.67,)
+x_key N-UNDECENE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-85.45,)
+#######################################################################
+result [[-7.16, -17.16, -25.16, -33.15, -34.42, -39.94, -48.78, -56.51, -63.63, -71.33, -78.67, -85.45]]
+From DataBase.py we are in Dates() where items=TC and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(190.6,)
+x_key ETHANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(305.4,)
+x_key PROPANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(369.8,)
+x_key ISOBUTANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(408.1,)
+x_key N-BUTANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(425.2,)
+x_key N-PENTANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(469.6,)
+x_key N-HEXANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(507.4,)
+x_key N-HEPTANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(540.2,)
+x_key N-OCTANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(568.8,)
+x_key N-NONANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(594.6,)
+x_key N-DECANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(617.6,)
+x_key N-UNDECENE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(638.8,)
+#######################################################################
+result [[190.6, 305.4, 369.8, 408.1, 425.2, 469.6, 507.4, 540.2, 568.8, 594.6, 617.6, 638.8]]
+From DataBase.py we are in Dates() where items=PC and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(4600.155,)
+x_key ETHANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(4883.865,)
+x_key PROPANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(4245.5175,)
+x_key ISOBUTANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(3647.7,)
+x_key N-BUTANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(3799.6875,)
+x_key N-PENTANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(3374.1225,)
+x_key N-HEXANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(2968.8225,)
+x_key N-HEPTANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(2735.775,)
+x_key N-OCTANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(2482.4625,)
+x_key N-NONANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(2310.21,)
+x_key N-DECANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(2107.56,)
+x_key N-UNDECENE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(1965.705,)
+#######################################################################
+result [[4600.155, 4883.865, 4245.5175, 3647.7, 3799.6875, 3374.1225, 2968.8225, 2735.775, 2482.4625, 2310.21, 2107.56, 1965.705]]
+From DataBase.py we are in Dates() where items=VC and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.099,)
+x_key ETHANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.148,)
+x_key PROPANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.203,)
+x_key ISOBUTANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.263,)
+x_key N-BUTANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.255,)
+x_key N-PENTANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.304,)
+x_key N-HEXANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.37,)
+x_key N-HEPTANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.432,)
+x_key N-OCTANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.492,)
+x_key N-NONANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.548,)
+x_key N-DECANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.603,)
+x_key N-UNDECENE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.66,)
+#######################################################################
+result [[0.099, 0.148, 0.203, 0.263, 0.255, 0.304, 0.37, 0.432, 0.492, 0.548, 0.603, 0.66]]
+From DataBase.py we are in Dates() where items=ZC and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.29,)
+x_key ETHANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.29,)
+x_key PROPANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.28,)
+x_key ISOBUTANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.28,)
+x_key N-BUTANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.27,)
+x_key N-PENTANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.26,)
+x_key N-HEXANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.26,)
+x_key N-HEPTANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.26,)
+x_key N-OCTANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.26,)
+x_key N-NONANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.26,)
+x_key N-DECANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.25,)
+x_key N-UNDECENE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.24,)
+#######################################################################
+result [[0.29, 0.29, 0.28, 0.28, 0.27, 0.26, 0.26, 0.26, 0.26, 0.26, 0.25, 0.24]]
+From DataBase.py we are in Dates() where items=PR_A and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(249.593795,)
+x_key ETHANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(603.5800434,)
+x_key PROPANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(1018.037171,)
+x_key ISOBUTANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(1443.027254,)
+x_key N-BUTANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(1503.831192,)
+x_key N-PENTANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(2065.645483,)
+x_key N-HEXANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(2740.798766,)
+x_key N-HEPTANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(3371.236655,)
+x_key N-OCTANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(4119.048786,)
+x_key N-NONANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(4836.807547,)
+x_key N-DECANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(5719.987562,)
+x_key N-UNDECENE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(6561.028582,)
+#######################################################################
+result [[249.593795, 603.5800434, 1018.037171, 1443.027254, 1503.831192, 2065.645483, 2740.798766, 3371.236655, 4119.048786, 4836.807547, 5719.987562, 6561.028582]]
+From DataBase.py we are in Dates() where items=PR_B and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.026799256,)
+x_key ETHANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.040446197,)
+x_key PROPANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.056338929,)
+x_key ISOBUTANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.072363538,)
+x_key N-BUTANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.072379851,)
+x_key N-PENTANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.090020113,)
+x_key N-HEXANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.110544857,)
+x_key N-HEPTANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.127716355,)
+x_key N-OCTANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.148200341,)
+x_key N-NONANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.166473748,)
+x_key N-DECANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.189539466,)
+x_key N-UNDECENE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.210193304,)
+#######################################################################
+result [[0.026799256, 0.040446197, 0.056338929, 0.072363538, 0.072379851, 0.090020113, 0.110544857, 0.127716355, 0.148200341, 0.166473748, 0.189539466, 0.210193304]]
+From DataBase.py we are in Dates() where items=OMEGA and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.01,)
+x_key ETHANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.1,)
+x_key PROPANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.15,)
+x_key ISOBUTANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.18,)
+x_key N-BUTANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.19,)
+x_key N-PENTANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.25,)
+x_key N-HEXANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.3,)
+x_key N-HEPTANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.35,)
+x_key N-OCTANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.39,)
+x_key N-NONANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.44,)
+x_key N-DECANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.49,)
+x_key N-UNDECENE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.54,)
+#######################################################################
+result [[0.01, 0.1, 0.15, 0.18, 0.19, 0.25, 0.3, 0.35, 0.39, 0.44, 0.49, 0.54]]
+From DataBase.py we are in Dates() where items=CP_A and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(19.2509064,)
+x_key ETHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(5.4093456,)
+x_key PROPANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-4.2244812,)
+x_key ISOBUTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-1.3900176,)
+x_key N-BUTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(9.4872888,)
+x_key N-PENTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-3.6257688,)
+x_key N-HEXANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-4.4128872,)
+x_key N-HEPTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-5.1455772,)
+x_key N-OCTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-6.0959808,)
+x_key N-NONANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(3.1442868,)
+x_key N-DECANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-7.913052,)
+x_key N-UNDECENE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-8.394534,)
+#######################################################################
+result [[19.2509064, 5.4093456, -4.2244812, -1.3900176, 9.4872888, -3.6257688, -4.4128872, -5.1455772, -6.0959808, 3.1442868, -7.913052, -8.394534]]
+From DataBase.py we are in Dates() where items=CP_B and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.05212566,)
+x_key ETHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.178106472,)
+x_key PROPANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.30626442,)
+x_key ISOBUTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.384725052,)
+x_key N-BUTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.331301484,)
+x_key N-PENTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.48734352,)
+x_key N-HEXANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.5819652,)
+x_key N-HEPTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.6761682,)
+x_key N-OCTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.77120856,)
+x_key N-NONANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.67742424,)
+x_key N-DECANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.9608706,)
+x_key N-UNDECENE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(1.05381756,)
+#######################################################################
+result [[0.05212566, 0.178106472, 0.30626442, 0.384725052, 0.331301484, 0.48734352, 0.5819652, 0.6761682, 0.77120856, 0.67742424, 0.9608706, 1.05381756]]
+From DataBase.py we are in Dates() where items=CP_C and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(1.2e-05,)
+x_key ETHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-6.94e-05,)
+x_key PROPANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000158638,)
+x_key ISOBUTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000184596,)
+x_key N-BUTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000110825,)
+x_key N-PENTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000258032,)
+x_key N-HEXANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000311875,)
+x_key N-HEPTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000365089,)
+x_key N-OCTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000419517,)
+x_key N-NONANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000192844,)
+x_key N-DECANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000528793,)
+x_key N-UNDECENE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000579872,)
+#######################################################################
+result [[1.2e-05, -6.94e-05, -0.000158638, -0.000184596, -0.000110825, -0.000258032, -0.000311875, -0.000365089, -0.000419517, -0.000192844, -0.000528793, -0.000579872]]
+From DataBase.py we are in Dates() where items=CP_D and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-1.1299999999999999e-08,)
+x_key ETHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(8.710000000000002e-09,)
+x_key PROPANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(3.21e-08,)
+x_key ISOBUTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(2.8999999999999998e-08,)
+x_key N-BUTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-2.8199999999999998e-09,)
+x_key N-PENTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(5.3e-08,)
+x_key N-HEXANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(6.49e-08,)
+x_key N-HEPTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(7.66e-08,)
+x_key N-OCTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(8.86e-08,)
+x_key N-NONANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-2.98e-08,)
+x_key N-DECANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(1.1299999999999999e-07,)
+x_key N-UNDECENE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(1.24e-07,)
+#######################################################################
+result [[-1.1299999999999999e-08, 8.710000000000002e-09, 3.21e-08, 2.8999999999999998e-08, -2.8199999999999998e-09, 5.3e-08, 6.49e-08, 7.66e-08, 8.86e-08, -2.98e-08, 1.1299999999999999e-07, 1.24e-07]]
+From DataBase.py we are in Dates() where items=HV and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(8183.239,)
+x_key ETHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(14713.087,)
+x_key PROPANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(18781.6846,)
+x_key ISOBUTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(21305.722,)
+x_key N-BUTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(22402.4016,)
+x_key N-PENTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(257.84528,)
+x_key N-HEXANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(28865.2768,)
+x_key N-HEPTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(31711.6208,)
+x_key N-OCTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(34428.205,)
+x_key N-NONANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(36931.3134,)
+x_key N-DECANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(39296.2904,)
+x_key N-UNDECENE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(41523.136,)
+#######################################################################
+result [[8183.239, 14713.087, 18781.6846, 21305.722, 22402.4016, 257.84528, 28865.2768, 31711.6208, 34428.205, 36931.3134, 39296.2904, 41523.136]]
+From DataBase.py we are in Dates() where items=TB and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(111.7,)
+x_key ETHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(184.5,)
+x_key PROPANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(231.1,)
+x_key ISOBUTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(261.3,)
+x_key N-BUTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(272.7,)
+x_key N-PENTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(309.2,)
+x_key N-HEXANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(341.9,)
+x_key N-HEPTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(371.6,)
+x_key N-OCTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(398.8,)
+x_key N-NONANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(424,)
+x_key N-DECANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(447.3,)
+x_key N-UNDECENE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(469.1,)
+#######################################################################
+result [[111.7, 184.5, 231.1, 261.3, 272.7, 309.2, 341.9, 371.6, 398.8, 424, 447.3, 469.1]]
+From DataBase.py we are in Dates() where items=DELHF and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-74883.962,)
+x_key ETHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-84720.592,)
+x_key PROPANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-103891.556,)
+x_key ISOBUTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-134573.47,)
+x_key N-BUTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-126201.87,)
+x_key N-PENTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-146503,)
+x_key N-HEXANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-167264.568,)
+x_key N-HEPTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-187858.704,)
+x_key N-OCTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-208536.556,)
+x_key N-NONANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-229130.692,)
+x_key N-DECANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-249766.686,)
+x_key N-UNDECENE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-270402.68,)
+#######################################################################
+result [[-74883.962, -84720.592, -103891.556, -134573.47, -126201.87, -146503, -167264.568, -187858.704, -208536.556, -229130.692, -249766.686, -270402.68]]
+From DataBase.py we are in Dates() where items=DELGF and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-50857.47,)
+x_key ETHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-32942.246,)
+x_key PROPANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-23482.338,)
+x_key ISOBUTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-20887.142,)
+x_key N-BUTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-17161.78,)
+x_key N-PENTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-8371.6,)
+x_key N-HEXANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-251.148,)
+x_key N-HEPTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(7994.878,)
+x_key N-OCTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(16408.336,)
+x_key N-NONANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(24821.794,)
+x_key N-DECANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(33235.252,)
+x_key N-UNDECENE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(41606.852,)
+#######################################################################
+result [[-50857.47, -32942.246, -23482.338, -20887.142, -17161.78, -8371.6, -251.148, 7994.878, 16408.336, 24821.794, 33235.252, 41606.852]]
+From DataBase.py we are in Dates() where items=CP_A and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(19.2509064,)
+x_key ETHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(5.4093456,)
+x_key PROPANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-4.2244812,)
+x_key ISOBUTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-1.3900176,)
+x_key N-BUTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(9.4872888,)
+x_key N-PENTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-3.6257688,)
+x_key N-HEXANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-4.4128872,)
+x_key N-HEPTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-5.1455772,)
+x_key N-OCTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-6.0959808,)
+x_key N-NONANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(3.1442868,)
+x_key N-DECANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-7.913052,)
+x_key N-UNDECENE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-8.394534,)
+#######################################################################
+result [[19.2509064, 5.4093456, -4.2244812, -1.3900176, 9.4872888, -3.6257688, -4.4128872, -5.1455772, -6.0959808, 3.1442868, -7.913052, -8.394534]]
+From DataBase.py we are in Dates() where items=CP_B and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.05212566,)
+x_key ETHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.178106472,)
+x_key PROPANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.30626442,)
+x_key ISOBUTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.384725052,)
+x_key N-BUTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.331301484,)
+x_key N-PENTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.48734352,)
+x_key N-HEXANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.5819652,)
+x_key N-HEPTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.6761682,)
+x_key N-OCTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.77120856,)
+x_key N-NONANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.67742424,)
+x_key N-DECANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.9608706,)
+x_key N-UNDECENE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(1.05381756,)
+#######################################################################
+result [[0.05212566, 0.178106472, 0.30626442, 0.384725052, 0.331301484, 0.48734352, 0.5819652, 0.6761682, 0.77120856, 0.67742424, 0.9608706, 1.05381756]]
+From DataBase.py we are in Dates() where items=CP_C and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(1.2e-05,)
+x_key ETHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-6.94e-05,)
+x_key PROPANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000158638,)
+x_key ISOBUTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000184596,)
+x_key N-BUTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000110825,)
+x_key N-PENTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000258032,)
+x_key N-HEXANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000311875,)
+x_key N-HEPTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000365089,)
+x_key N-OCTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000419517,)
+x_key N-NONANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000192844,)
+x_key N-DECANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000528793,)
+x_key N-UNDECENE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000579872,)
+#######################################################################
+result [[1.2e-05, -6.94e-05, -0.000158638, -0.000184596, -0.000110825, -0.000258032, -0.000311875, -0.000365089, -0.000419517, -0.000192844, -0.000528793, -0.000579872]]
+From DataBase.py we are in Dates() where items=CP_D and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-1.1299999999999999e-08,)
+x_key ETHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(8.710000000000002e-09,)
+x_key PROPANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(3.21e-08,)
+x_key ISOBUTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(2.8999999999999998e-08,)
+x_key N-BUTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-2.8199999999999998e-09,)
+x_key N-PENTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(5.3e-08,)
+x_key N-HEXANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(6.49e-08,)
+x_key N-HEPTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(7.66e-08,)
+x_key N-OCTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(8.86e-08,)
+x_key N-NONANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-2.98e-08,)
+x_key N-DECANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(1.1299999999999999e-07,)
+x_key N-UNDECENE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(1.24e-07,)
+#######################################################################
+result [[-1.1299999999999999e-08, 8.710000000000002e-09, 3.21e-08, 2.8999999999999998e-08, -2.8199999999999998e-09, 5.3e-08, 6.49e-08, 7.66e-08, 8.86e-08, -2.98e-08, 1.1299999999999999e-07, 1.24e-07]]
+From DataBase.py we are in Dates() where items=HV and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(8183.239,)
+x_key ETHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(14713.087,)
+x_key PROPANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(18781.6846,)
+x_key ISOBUTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(21305.722,)
+x_key N-BUTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(22402.4016,)
+x_key N-PENTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(257.84528,)
+x_key N-HEXANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(28865.2768,)
+x_key N-HEPTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(31711.6208,)
+x_key N-OCTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(34428.205,)
+x_key N-NONANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(36931.3134,)
+x_key N-DECANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(39296.2904,)
+x_key N-UNDECENE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(41523.136,)
+#######################################################################
+result [[8183.239, 14713.087, 18781.6846, 21305.722, 22402.4016, 257.84528, 28865.2768, 31711.6208, 34428.205, 36931.3134, 39296.2904, 41523.136]]
+From DataBase.py we are in Dates() where items=TB and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(111.7,)
+x_key ETHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(184.5,)
+x_key PROPANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(231.1,)
+x_key ISOBUTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(261.3,)
+x_key N-BUTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(272.7,)
+x_key N-PENTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(309.2,)
+x_key N-HEXANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(341.9,)
+x_key N-HEPTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(371.6,)
+x_key N-OCTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(398.8,)
+x_key N-NONANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(424,)
+x_key N-DECANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(447.3,)
+x_key N-UNDECENE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(469.1,)
+#######################################################################
+result [[111.7, 184.5, 231.1, 261.3, 272.7, 309.2, 341.9, 371.6, 398.8, 424, 447.3, 469.1]]
+From DataBase.py we are in Dates() where items=DELHF and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-74883.962,)
+x_key ETHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-84720.592,)
+x_key PROPANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-103891.556,)
+x_key ISOBUTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-134573.47,)
+x_key N-BUTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-126201.87,)
+x_key N-PENTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-146503,)
+x_key N-HEXANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-167264.568,)
+x_key N-HEPTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-187858.704,)
+x_key N-OCTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-208536.556,)
+x_key N-NONANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-229130.692,)
+x_key N-DECANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-249766.686,)
+x_key N-UNDECENE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-270402.68,)
+#######################################################################
+result [[-74883.962, -84720.592, -103891.556, -134573.47, -126201.87, -146503, -167264.568, -187858.704, -208536.556, -229130.692, -249766.686, -270402.68]]
+From DataBase.py we are in Dates() where items=DELGF and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-50857.47,)
+x_key ETHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-32942.246,)
+x_key PROPANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-23482.338,)
+x_key ISOBUTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-20887.142,)
+x_key N-BUTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-17161.78,)
+x_key N-PENTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-8371.6,)
+x_key N-HEXANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-251.148,)
+x_key N-HEPTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(7994.878,)
+x_key N-OCTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(16408.336,)
+x_key N-NONANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(24821.794,)
+x_key N-DECANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(33235.252,)
+x_key N-UNDECENE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(41606.852,)
+#######################################################################
+result [[-50857.47, -32942.246, -23482.338, -20887.142, -17161.78, -8371.6, -251.148, 7994.878, 16408.336, 24821.794, 33235.252, 41606.852]]
+TheCase info for case PR as follows:
+{'Load': 1, 'NamePresureVap': 'ANTOINE', 'NameEOS': 'PengRobinson', 'Const': {'PR_B': array([ 0.02679926,  0.0404462 ,  0.05633893,  0.07236354,  0.07237985,
+        0.09002011,  0.11054486,  0.12771636,  0.14820034,  0.16647375,
+        0.18953947,  0.2101933 ]), 'VC': array([ 0.099,  0.148,  0.203,  0.263,  0.255,  0.304,  0.37 ,  0.432,
+        0.492,  0.548,  0.603,  0.66 ]), 'DELHF': array([ -74883.962,  -84720.592, -103891.556, -134573.47 , -126201.87 ,
+       -146503.   , -167264.568, -187858.704, -208536.556, -229130.692,
+       -249766.686, -270402.68 ]), 'DELGF': array([-50857.47 , -32942.246, -23482.338, -20887.142, -17161.78 ,
+        -8371.6  ,   -251.148,   7994.878,  16408.336,  24821.794,
+        33235.252,  41606.852]), 'MoleWt': array([  16.04,   30.07,   44.1 ,   58.12,   58.12,   72.15,   86.18,
+        100.21,  114.23,  128.26,  142.29,  156.31]), 'CP_D': array([ -1.13000000e-08,   8.71000000e-09,   3.21000000e-08,
+         2.90000000e-08,  -2.82000000e-09,   5.30000000e-08,
+         6.49000000e-08,   7.66000000e-08,   8.86000000e-08,
+        -2.98000000e-08,   1.13000000e-07,   1.24000000e-07]), 'TB': array([ 111.7,  184.5,  231.1,  261.3,  272.7,  309.2,  341.9,  371.6,
+        398.8,  424. ,  447.3,  469.1]), 'HV': array([  8183.239  ,  14713.087  ,  18781.6846 ,  21305.722  ,
+        22402.4016 ,    257.84528,  28865.2768 ,  31711.6208 ,
+        34428.205  ,  36931.3134 ,  39296.2904 ,  41523.136  ]), 'LIQDEN': array([425, 548, 582, 557, 579, 626, 659, 684, 703, 718, 730, 740]), 'PR_A': array([  249.593795 ,   603.5800434,  1018.037171 ,  1443.027254 ,
+        1503.831192 ,  2065.645483 ,  2740.798766 ,  3371.236655 ,
+        4119.048786 ,  4836.807547 ,  5719.987562 ,  6561.028582 ]), 'ZC': array([ 0.29,  0.29,  0.28,  0.28,  0.27,  0.26,  0.26,  0.26,  0.26,
+        0.26,  0.25,  0.24]), 'PC': array([ 4600.155 ,  4883.865 ,  4245.5175,  3647.7   ,  3799.6875,
+        3374.1225,  2968.8225,  2735.775 ,  2482.4625,  2310.21  ,
+        2107.56  ,  1965.705 ]), 'ANT_C': array([ -7.16, -17.16, -25.16, -33.15, -34.42, -39.94, -48.78, -56.51,
+       -63.63, -71.33, -78.67, -85.45]), 'ANT_B': array([  897.84,  1511.42,  1872.46,  2032.73,  2154.9 ,  2477.07,
+        2697.55,  2911.32,  3120.29,  3291.45,  3456.8 ,  3614.07]), 'ANT_A': array([ 15.22,  15.66,  15.73,  15.54,  15.68,  15.83,  15.84,  15.87,
+        15.94,  15.97,  16.01,  16.05]), 'CP_A': array([ 19.2509064,   5.4093456,  -4.2244812,  -1.3900176,   9.4872888,
+        -3.6257688,  -4.4128872,  -5.1455772,  -6.0959808,   3.1442868,
+        -7.913052 ,  -8.394534 ]), 'CP_B': array([ 0.05212566,  0.17810647,  0.30626442,  0.38472505,  0.33130148,
+        0.48734352,  0.5819652 ,  0.6761682 ,  0.77120856,  0.67742424,
+        0.9608706 ,  1.05381756]), 'CP_C': array([  1.20000000e-05,  -6.94000000e-05,  -1.58638000e-04,
+        -1.84596000e-04,  -1.10825000e-04,  -2.58032000e-04,
+        -3.11875000e-04,  -3.65089000e-04,  -4.19517000e-04,
+        -1.92844000e-04,  -5.28793000e-04,  -5.79872000e-04]), 'OMEGA': array([ 0.01,  0.1 ,  0.15,  0.18,  0.19,  0.25,  0.3 ,  0.35,  0.39,
+        0.44,  0.49,  0.54]), 'TC': array([ 190.6,  305.4,  369.8,  408.1,  425.2,  469.6,  507.4,  540.2,
+        568.8,  594.6,  617.6,  638.8])}, 'library': ['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE', 'N-OCTANE', 'N-NONANE', 'N-DECANE', 'N-UNDECENE'], 'EOS': <PengRobinson.Model instance at 0x7f5eaa8f0320>, 'PublicVars': ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'], 'Cases': [], 'PresureVap': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f5eaa8ed5f0>}
+################ Completion of LoadConst ###########################
+('case_i from AddCase()', ['PR'])
+################### Ollin PresureVap obj
+<ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f5eaa8ed5f0>
+#################### Calling Ollin().Solve()
+Inside Solve() of Ollin:
+('Ollin obj :', {'TheCase': {'PR': <ollin.Administrator.ThermoCase.ThermoCase instance at 0x7f5eaa8ed5a8>}, 'Model': {}, 'TheObj': {'PR': <ollin.Administrator.ThemoObj.ThermoObj instance at 0x7f5e9d6a28c0>}, 'cur': <ollin.DataBase.DataBase.DataBase instance at 0x7f5e9d693b00>})
+('Ollin TheObj element val:', {'PR': <ollin.Administrator.ThemoObj.ThermoObj instance at 0x7f5e9d6a28c0>})
+('Ollin TheCase element val:', {'PR': <ollin.Administrator.ThermoCase.ThermoCase instance at 0x7f5eaa8ed5a8>})
+Solving PR...
+############### Calling of Solve() from ThermoCase.py
+Defined Temperature
+...Defined Presure
+#################### Calling Ollin().Resumen()
+
+ ..::Resumen ::..
+
+FracVap      = 1.0000
+Press  KPa   = 1861.000
+Temp   K     = 322.000
+Z L          = 0.112
+Z V          = 0.112
+Z            = 0.112
+Enthalpy KJ/Kgmol  =  15872.7911733
+Entropy  KJ/KgmolK =  173.167749435
+MolWt     Kg/kgmol = 72.250
+MolWt L  Kg/kgmol  = 72.250
+MolWt V  Kg/kgmol  = 72.250
+..::Component::..      << Liq Fraction >>   << Vap Fraction >>
+METHANE              ==>       0.1394          |____|       0.1394
+ETHANE               ==>       0.1115          |____|       0.1115
+PROPANE              ==>       0.1066          |____|       0.1066
+ISOBUTANE            ==>       0.1392          |____|       0.1392
+N-BUTANE             ==>       0.0717          |____|       0.0717
+N-PENTANE            ==>       0.0368          |____|       0.0368
+N-HEXANE             ==>       0.0526          |____|       0.0526
+N-HEPTANE            ==>       0.0821          |____|       0.0821
+N-OCTANE             ==>       0.0858          |____|       0.0858
+N-NONANE             ==>       0.0791          |____|       0.0791
+N-DECANE             ==>       0.0387          |____|       0.0387
+N-UNDECENE           ==>       0.0565          |____|       0.0565
+
+Process finished with exit code 0

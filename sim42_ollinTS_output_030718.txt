@@ -1,0 +1,902 @@
+/home/dat-asset-227/envs/sim42_using_py2/bin/python /home/dat-asset-227/code/sim42/ollin/Example/myTestExp.py
+('dBpath', '/home/dat-asset-227/code/sim42/ollin/DataBase/')
+('dBname', 'data.db')
+
+Loading Data Base data.db
+('Db connetion obj:', <sqlite3.Connection object at 0x7fae39bf8200>)
+('Cursor Obj', <sqlite3.Cursor object at 0x7fae39c33030>)
+\..........
+OllinTS has been loaded
+
+('Name', 'PR')
+('Case', 'PR')
+('PV', 'ANTOINE')
+############################ STARTS exec of LoadPresureModel(PV=ANTOINE )###########################
+('load pressue model for ', 'ANTOINE')
+('PresureVapor.Equation.keys()', ['HARLACHER', 'ANTOINE'])
+('I will call ', 'Antoine Equation', '()')
+('Needed variables for PV model:', 'Antoine Equation', '() as follows:', ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C'])
+############################ ENDS exec of LoadPresureModel(PV=ANTOINE )###########################
+############################ STARTS exec of LoadEOSModel(model=PengRobinson )###########################
+('LoadEOSModel module::', <module 'ollin.CES' from '/home/dat-asset-227/code/sim42/ollin/CES/__init__.pyc'>)
+('LoadEOSModel model::', 'PengRobinson')
+('LoadEOSModel module path::', ['/home/dat-asset-227/code/sim42/ollin/CES'])
+('LoadEOSModel module fullName::', 'ollin.CES.PengRobinson')
+('sys.modules', {'heapq': <module 'heapq' from '/usr/lib/python2.7/heapq.pyc'>, 'numpy.core.info': <module 'numpy.core.info' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/info.pyc'>, 'imp': <module 'imp' (built-in)>, 'numpy.lib.format': <module 'numpy.lib.format' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/format.pyc'>, 'functools': <module 'functools' from '/usr/lib/python2.7/functools.pyc'>, 'unittest.types': None, 'numpy.oldnumeric.typeconv': <module 'numpy.oldnumeric.typeconv' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/oldnumeric/typeconv.pyc'>, 'datetime': <module 'datetime' (built-in)>, 'ollin.DataBase.numpy': None, 'numpy.oldnumeric.precision': <module 'numpy.oldnumeric.precision' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/oldnumeric/precision.pyc'>, 'ctypes._endian': <module 'ctypes._endian' from '/usr/lib/python2.7/ctypes/_endian.pyc'>, 'encodings.encodings': None, 'unittest.pprint': None, 'ollin.DataBase.sqlite3': None, 'sqlite3.collections': None, 'numpy.polynomial.legendre': <module 'numpy.polynomial.legendre' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/polynomial/legendre.pyc'>, 'numpy.random.mtrand': <module 'numpy.random.mtrand' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/random/mtrand.so'>, 'numpy.core.shape_base': <module 'numpy.core.shape_base' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/shape_base.pyc'>, 'numpy.matrixlib.defmatrix': <module 'numpy.matrixlib.defmatrix' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/matrixlib/defmatrix.pyc'>, 'numpy.random.info': <module 'numpy.random.info' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/random/info.pyc'>, 'pprint': <module 'pprint' from '/usr/lib/python2.7/pprint.pyc'>, 'numpy.linalg': <module 'numpy.linalg' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/linalg/__init__.pyc'>, 'ollin.Administrator.numpy': None, 'sqlite3._sqlite3': None, 'numpy.testing': <module 'numpy.testing' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/testing/__init__.pyc'>, 'collections': <module 'collections' from '/usr/lib/python2.7/collections.pyc'>, 'unittest.sys': None, 'numpy.core.umath': <module 'numpy.core.umath' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/umath.so'>, 'unittest.main': <module 'unittest.main' from '/usr/lib/python2.7/unittest/main.pyc'>, 'numpy.core.scalarmath': <module 'numpy.core.scalarmath' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/scalarmath.so'>, 'zipimport': <module 'zipimport' (built-in)>, 'unittest.time': None, 'numpy.linalg.info': <module 'numpy.linalg.info' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/linalg/info.pyc'>, 'unittest.functools': None, 'numpy.lib.arraysetops': <module 'numpy.lib.arraysetops' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/arraysetops.pyc'>, 'encodings.utf_8': <module 'encodings.utf_8' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/encodings/utf_8.pyc'>, 'ollin.DataBase.SysData': <module 'ollin.DataBase.SysData' from '/home/dat-asset-227/code/sim42/ollin/DataBase/SysData.pyc'>, 'itertools': <module 'itertools' (built-in)>, 'numpy.version': <module 'numpy.version' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/version.pyc'>, 'ctypes.os': None, 'numpy.oldnumeric.misc': <module 'numpy.oldnumeric.misc' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/oldnumeric/misc.pyc'>, 'numpy.core.machar': <module 'numpy.core.machar' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/machar.pyc'>, 'numpy.lib.type_check': <module 'numpy.lib.type_check' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/type_check.pyc'>, 'ollin.CES': <module 'ollin.CES' from '/home/dat-asset-227/code/sim42/ollin/CES/__init__.pyc'>, 'unittest.StringIO': None, 'ollin': <module 'ollin' from '/home/dat-asset-227/code/sim42/ollin/__init__.pyc'>, 'ollin.Thermodinamics.PresureVapor': <module 'ollin.Thermodinamics.PresureVapor' from '/home/dat-asset-227/code/sim42/ollin/Thermodinamics/PresureVapor.pyc'>, 'signal': <module 'signal' (built-in)>, 'numpy.random.operator': None, 'numpy.lib._datasource': <module 'numpy.lib._datasource' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/_datasource.pyc'>, 'unittest.re': None, 'numpy.ma.extras': <module 'numpy.ma.extras' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/ma/extras.pyc'>, 'numpy.fft.fftpack_lite': <module 'numpy.fft.fftpack_lite' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/fft/fftpack_lite.so'>, 'ollin.Administrator.ThemoObj': <module 'ollin.Administrator.ThemoObj' from '/home/dat-asset-227/code/sim42/ollin/Administrator/ThemoObj.pyc'>, 'numpy.core.multiarray': <module 'numpy.core.multiarray' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/multiarray.so'>, 'numpy.linalg._umath_linalg': <module 'numpy.linalg._umath_linalg' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/linalg/_umath_linalg.so'>, 'cStringIO': <module 'cStringIO' (built-in)>, 'ollin.DataBase.DataBase': <module 'ollin.DataBase.DataBase' from '/home/dat-asset-227/code/sim42/ollin/DataBase/DataBase.pyc'>, 'numpy.add_newdocs': <module 'numpy.add_newdocs' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/add_newdocs.pyc'>, 'unittest.difflib': None, 'numpy.core.getlimits': <module 'numpy.core.getlimits' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/getlimits.pyc'>, 'encodings': <module 'encodings' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/encodings/__init__.pyc'>, 'numpy.oldnumeric': <module 'numpy.oldnumeric' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/oldnumeric/__init__.pyc'>, 'shutil': <module 'shutil' from '/usr/lib/python2.7/shutil.pyc'>, 'ollin.Administrator.ThermoCase': <module 'ollin.Administrator.ThermoCase' from '/home/dat-asset-227/code/sim42/ollin/Administrator/ThermoCase.pyc'>, 'abc': <module 'abc' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/abc.pyc'>, 'numpy.matrixlib': <module 'numpy.matrixlib' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/matrixlib/__init__.pyc'>, 'numpy.testing.decorators': <module 'numpy.testing.decorators' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/testing/decorators.pyc'>, 'ollin.Administrator.re': None, 'numpy.lib.npyio': <module 'numpy.lib.npyio' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/npyio.pyc'>, 'ollin.Administrator.AdmOllin': <module 'ollin.Administrator.AdmOllin' from '/home/dat-asset-227/code/sim42/ollin/Administrator/AdmOllin.py'>, 'numpy.core.numerictypes': <module 'numpy.core.numerictypes' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/numerictypes.pyc'>, 're': <module 're' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/re.pyc'>, 'numpy.lib._compiled_base': <module 'numpy.lib._compiled_base' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/_compiled_base.so'>, 'sqlite3.time': None, 'math': <module 'math' (built-in)>, 'numpy.fft.helper': <module 'numpy.fft.helper' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/fft/helper.pyc'>, 'unittest.case': <module 'unittest.case' from '/usr/lib/python2.7/unittest/case.pyc'>, 'UserDict': <module 'UserDict' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/UserDict.pyc'>, 'unittest.suite': <module 'unittest.suite' from '/usr/lib/python2.7/unittest/suite.pyc'>, '_ctypes': <module '_ctypes' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/lib-dynload/_ctypes.x86_64-linux-gnu.so'>, 'fnmatch': <module 'fnmatch' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/fnmatch.pyc'>, 'numpy.lib.info': <module 'numpy.lib.info' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/info.pyc'>, 'ollin.Thermodinamics': <module 'ollin.Thermodinamics' from '/home/dat-asset-227/code/sim42/ollin/Thermodinamics/__init__.pyc'>, 'ctypes': <module 'ctypes' from '/usr/lib/python2.7/ctypes/__init__.pyc'>, 'ollin.Thermodinamics.numpy': None, 'ctypes.struct': None, 'codecs': <module 'codecs' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/codecs.pyc'>, 'sqlite3.dbapi2': <module 'sqlite3.dbapi2' from '/usr/lib/python2.7/sqlite3/dbapi2.pyc'>, 'unittest.loader': <module 'unittest.loader' from '/usr/lib/python2.7/unittest/loader.pyc'>, 'struct': <module 'struct' from '/usr/lib/python2.7/struct.pyc'>, '_functools': <module '_functools' (built-in)>, '_locale': <module '_locale' (built-in)>, 'thread': <module 'thread' (built-in)>, 'StringIO': <module 'StringIO' from '/usr/lib/python2.7/StringIO.pyc'>, 'numpy.core.memmap': <module 'numpy.core.memmap' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/memmap.pyc'>, 'ollin.Administrator.sys': None, 'traceback': <module 'traceback' from '/usr/lib/python2.7/traceback.pyc'>, 'ollin.Administrator.ollin': None, 'weakref': <module 'weakref' from '/usr/lib/python2.7/weakref.pyc'>, 'numpy.core._internal': <module 'numpy.core._internal' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/_internal.pyc'>, 'numpy.fft.fftpack': <module 'numpy.fft.fftpack' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/fft/fftpack.pyc'>, 'numpy.linalg.lapack_lite': <module 'numpy.linalg.lapack_lite' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/linalg/lapack_lite.so'>, 'numpy.ma': <module 'numpy.ma' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/ma/__init__.pyc'>, 'os': <module 'os' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/os.pyc'>, 'marshal': <module 'marshal' (built-in)>, 'numpy.oldnumeric.array_printer': <module 'numpy.oldnumeric.array_printer' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/oldnumeric/array_printer.pyc'>, '__future__': <module '__future__' from '/usr/lib/python2.7/__future__.pyc'>, '_collections': <module '_collections' (built-in)>, '_sre': <module '_sre' (built-in)>, 'unittest': <module 'unittest' from '/usr/lib/python2.7/unittest/__init__.pyc'>, 'sqlite3.datetime': None, '__builtin__': <module '__builtin__' (built-in)>, 'numpy.lib.twodim_base': <module 'numpy.lib.twodim_base' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/twodim_base.pyc'>, 'numpy.polynomial': <module 'numpy.polynomial' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/polynomial/__init__.pyc'>, 'unittest.runner': <module 'unittest.runner' from '/usr/lib/python2.7/unittest/runner.pyc'>, 'operator': <module 'operator' (built-in)>, 'ollin.Administrator': <module 'ollin.Administrator' from '/home/dat-asset-227/code/sim42/ollin/Administrator/__init__.pyc'>, 'numpy.polynomial.polytemplate': <module 'numpy.polynomial.polytemplate' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/polynomial/polytemplate.pyc'>, 'numpy.core.arrayprint': <module 'numpy.core.arrayprint' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/arrayprint.pyc'>, 'numpy.oldnumeric.ufuncs': <module 'numpy.oldnumeric.ufuncs' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/oldnumeric/ufuncs.pyc'>, 'ctypes._ctypes': None, '_heapq': <module '_heapq' (built-in)>, 'ctypes.sys': None, 'unittest.collections': None, 'posixpath': <module 'posixpath' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/posixpath.pyc'>, 'numpy.lib.financial': <module 'numpy.lib.financial' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/financial.pyc'>, 'numpy.polynomial.laguerre': <module 'numpy.polynomial.laguerre' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/polynomial/laguerre.pyc'>, 'errno': <module 'errno' (built-in)>, 'binascii': <module 'binascii' (built-in)>, 'sre_constants': <module 'sre_constants' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/sre_constants.pyc'>, 'numpy.core._methods': <module 'numpy.core._methods' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/_methods.pyc'>, 'os.path': <module 'posixpath' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/posixpath.pyc'>, 'numpy.core.function_base': <module 'numpy.core.function_base' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/function_base.pyc'>, 'unittest.fnmatch': None, 'numpy.lib.stride_tricks': <module 'numpy.lib.stride_tricks' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/stride_tricks.pyc'>, 'numpy': <module 'numpy' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/__init__.pyc'>, '_warnings': <module '_warnings' (built-in)>, 'numpy.polynomial.chebyshev': <module 'numpy.polynomial.chebyshev' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/polynomial/chebyshev.pyc'>, 'cPickle': <module 'cPickle' (built-in)>, 'encodings.__builtin__': None, 'numpy.polynomial.hermite_e': <module 'numpy.polynomial.hermite_e' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/polynomial/hermite_e.pyc'>, '_codecs': <module '_codecs' (built-in)>, 'numpy.__config__': <module 'numpy.__config__' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/__config__.pyc'>, 'pwd': <module 'pwd' (built-in)>, 'future_builtins': <module 'future_builtins' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/lib-dynload/future_builtins.x86_64-linux-gnu.so'>, 'numpy.ma.core': <module 'numpy.ma.core' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/ma/core.pyc'>, 'numpy.testing.utils': <module 'numpy.testing.utils' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/testing/utils.pyc'>, 'numpy.lib.ufunclike': <module 'numpy.lib.ufunclike' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/ufunclike.pyc'>, 'copy': <module 'copy' from '/usr/lib/python2.7/copy.pyc'>, '_struct': <module '_struct' (built-in)>, 'numpy.core.fromnumeric': <module 'numpy.core.fromnumeric' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/fromnumeric.pyc'>, 'numpy.lib._iotools': <module 'numpy.lib._iotools' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/_iotools.pyc'>, 'numpy.ctypeslib': <module 'numpy.ctypeslib' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/ctypeslib.pyc'>, 'keyword': <module 'keyword' from '/usr/lib/python2.7/keyword.pyc'>, 'numpy.lib.scimath': <module 'numpy.lib.scimath' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/scimath.pyc'>, 'numpy.fft': <module 'numpy.fft' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/fft/__init__.pyc'>, 'numpy.lib': <module 'numpy.lib' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/__init__.pyc'>, 'numpy.lib.nanfunctions': <module 'numpy.lib.nanfunctions' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/nanfunctions.pyc'>, 'numpy.random.numpy': None, 'unittest.weakref': None, 'posix': <module 'posix' (built-in)>, 'encodings.aliases': <module 'encodings.aliases' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/encodings/aliases.pyc'>, 'numpy.lib.function_base': <module 'numpy.lib.function_base' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/function_base.pyc'>, 'exceptions': <module 'exceptions' (built-in)>, 'sre_parse': <module 'sre_parse' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/sre_parse.pyc'>, 'pickle': <module 'pickle' from '/usr/lib/python2.7/pickle.pyc'>, 'unittest.signal': None, 'copy_reg': <module 'copy_reg' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/copy_reg.pyc'>, 'sre_compile': <module 'sre_compile' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/sre_compile.pyc'>, 'numpy.compat.py3k': <module 'numpy.compat.py3k' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/compat/py3k.pyc'>, 'site': <module 'site' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/site.pyc'>, 'numpy.lib.polynomial': <module 'numpy.lib.polynomial' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/polynomial.pyc'>, 'numpy.compat': <module 'numpy.compat' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/compat/__init__.pyc'>, 'numpy._import_tools': <module 'numpy._import_tools' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/_import_tools.pyc'>, 'numpy.polynomial.hermite': <module 'numpy.polynomial.hermite' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/polynomial/hermite.pyc'>, 'io': <module 'io' from '/usr/lib/python2.7/io.pyc'>, '__main__': <module '__main__' from '/home/dat-asset-227/code/sim42/ollin/Example/myTestExp.py'>, 'ollin.Administrator.imp': None, 'numpy.fft.info': <module 'numpy.fft.info' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/fft/info.pyc'>, 'numpy.core.records': <module 'numpy.core.records' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/records.pyc'>, 'numpy.core._dotblas': <module 'numpy.core._dotblas' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/_dotblas.so'>, 'numpy.polynomial.polynomial': <module 'numpy.polynomial.polynomial' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/polynomial/polynomial.pyc'>, 'string': <module 'string' from '/usr/lib/python2.7/string.pyc'>, 'ollin.DataBase.ollin': None, 'unittest.result': <module 'unittest.result' from '/usr/lib/python2.7/unittest/result.pyc'>, 'strop': <module 'strop' (built-in)>, 'grp': <module 'grp' (built-in)>, 'linecache': <module 'linecache' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/linecache.pyc'>, 'numpy.core.numeric': <module 'numpy.core.numeric' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/numeric.pyc'>, 'encodings.codecs': None, '_abcoll': <module '_abcoll' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/_abcoll.pyc'>, 'numpy.core': <module 'numpy.core' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/__init__.pyc'>, 'sqlite3': <module 'sqlite3' from '/usr/lib/python2.7/sqlite3/__init__.pyc'>, 'genericpath': <module 'genericpath' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/genericpath.pyc'>, 'stat': <module 'stat' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/stat.pyc'>, 'numpy.lib.index_tricks': <module 'numpy.lib.index_tricks' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/index_tricks.pyc'>, 'numpy.random': <module 'numpy.random' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/random/__init__.pyc'>, 'warnings': <module 'warnings' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/warnings.pyc'>, 'numpy.lib.utils': <module 'numpy.lib.utils' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/utils.pyc'>, 'numpy.core.defchararray': <module 'numpy.core.defchararray' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/core/defchararray.pyc'>, 'numpy.polynomial.polyutils': <module 'numpy.polynomial.polyutils' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/polynomial/polyutils.pyc'>, 'numpy.lib.shape_base': <module 'numpy.lib.shape_base' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/shape_base.pyc'>, 'unittest.signals': <module 'unittest.signals' from '/usr/lib/python2.7/unittest/signals.pyc'>, 'sys': <module 'sys' (built-in)>, 'numpy.compat._inspect': <module 'numpy.compat._inspect' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/compat/_inspect.pyc'>, '_sqlite3': <module '_sqlite3' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/lib-dynload/_sqlite3.x86_64-linux-gnu.so'>, 'ctypes.ctypes': None, 'ollin.DataBase': <module 'ollin.DataBase' from '/home/dat-asset-227/code/sim42/ollin/DataBase/__init__.pyc'>, 'numpy.lib.arrayterator': <module 'numpy.lib.arrayterator' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/arrayterator.pyc'>, 'numpy.testing.nosetester': <module 'numpy.testing.nosetester' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/testing/nosetester.pyc'>, 'types': <module 'types' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/types.pyc'>, 'sitecustomize': <module 'sitecustomize' from '/usr/lib/python2.7/sitecustomize.pyc'>, 'numpy.oldnumeric.compat': <module 'numpy.oldnumeric.compat' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/oldnumeric/compat.pyc'>, 'numpy.oldnumeric.functions': <module 'numpy.oldnumeric.functions' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/oldnumeric/functions.pyc'>, 'unittest.util': <module 'unittest.util' from '/usr/lib/python2.7/unittest/util.pyc'>, 'numpy.lib.arraypad': <module 'numpy.lib.arraypad' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/lib/arraypad.pyc'>, '_weakref': <module '_weakref' (built-in)>, 'numpy.testing.numpytest': <module 'numpy.testing.numpytest' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/testing/numpytest.pyc'>, 'difflib': <module 'difflib' from '/usr/lib/python2.7/difflib.pyc'>, '_io': <module '_io' (built-in)>, '_weakrefset': <module '_weakrefset' from '/home/dat-asset-227/envs/sim42_using_py2/lib/python2.7/_weakrefset.pyc'>, 'unittest.warnings': None, 'time': <module 'time' (built-in)>, 'unittest.traceback': None, 'numpy.linalg.linalg': <module 'numpy.linalg.linalg' from '/home/dat-asset-227/envs/sim42_using_py2/local/lib/python2.7/site-packages/numpy/linalg/linalg.pyc'>, 'unittest.os': None})
+('file, path, description from python imp.find_module', <open file '/home/dat-asset-227/code/sim42/ollin/CES/PengRobinson.py', mode 'U' at 0x7fae39c22540>, '/home/dat-asset-227/code/sim42/ollin/CES/PengRobinson.py', ('.py', 'U', 1))
+('lang from imp.load_module', <open file '/home/dat-asset-227/code/sim42/ollin/CES/PengRobinson.py', mode 'U' at 0x7fae39c22540>, '/home/dat-asset-227/code/sim42/ollin/CES/PengRobinson.py', ('.py', 'U', 1))
+('lang in detail::', {'Model': <class PengRobinson.Model at 0x7fae39c2be88>, 'log': <ufunc 'log'>, 'power': <ufunc 'power'>, '__builtins__': {'bytearray': <type 'bytearray'>, 'IndexError': <type 'exceptions.IndexError'>, 'all': <built-in function all>, 'help': Type help() for interactive help, or help(object) for help about object., 'vars': <built-in function vars>, 'SyntaxError': <type 'exceptions.SyntaxError'>, 'unicode': <type 'unicode'>, 'UnicodeDecodeError': <type 'exceptions.UnicodeDecodeError'>, 'memoryview': <type 'memoryview'>, 'isinstance': <built-in function isinstance>, 'copyright': Copyright (c) 2001-2016 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved., 'NameError': <type 'exceptions.NameError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'dict': <type 'dict'>, 'input': <built-in function input>, 'oct': <built-in function oct>, 'bin': <built-in function bin>, 'SystemExit': <type 'exceptions.SystemExit'>, 'StandardError': <type 'exceptions.StandardError'>, 'format': <built-in function format>, 'repr': <built-in function repr>, 'sorted': <built-in function sorted>, 'False': False, 'RuntimeWarning': <type 'exceptions.RuntimeWarning'>, 'list': <type 'list'>, 'iter': <built-in function iter>, 'reload': <built-in function reload>, 'Warning': <type 'exceptions.Warning'>, '__package__': None, 'round': <built-in function round>, 'dir': <built-in function dir>, 'cmp': <built-in function cmp>, 'set': <type 'set'>, 'bytes': <type 'str'>, 'reduce': <built-in function reduce>, 'intern': <built-in function intern>, 'issubclass': <built-in function issubclass>, 'Ellipsis': Ellipsis, 'EOFError': <type 'exceptions.EOFError'>, 'locals': <built-in function locals>, 'BufferError': <type 'exceptions.BufferError'>, 'slice': <type 'slice'>, 'FloatingPointError': <type 'exceptions.FloatingPointError'>, 'sum': <built-in function sum>, 'getattr': <built-in function getattr>, 'abs': <built-in function abs>, 'exit': Use exit() or Ctrl-D (i.e. EOF) to exit, 'print': <built-in function print>, 'True': True, 'FutureWarning': <type 'exceptions.FutureWarning'>, 'ImportWarning': <type 'exceptions.ImportWarning'>, 'None': None, 'hash': <built-in function hash>, 'ReferenceError': <type 'exceptions.ReferenceError'>, 'len': <built-in function len>, 'credits':     Thanks to CWI, CNRI, BeOpen.com, Zope Corporation and a cast of thousands
+    for supporting Python development.  See www.python.org for more information., 'frozenset': <type 'frozenset'>, '__name__': '__builtin__', 'ord': <built-in function ord>, 'super': <type 'super'>, 'TypeError': <type 'exceptions.TypeError'>, 'license': See http://www.python.org/2.7/license.html, 'KeyboardInterrupt': <type 'exceptions.KeyboardInterrupt'>, 'UserWarning': <type 'exceptions.UserWarning'>, 'filter': <built-in function filter>, 'range': <built-in function range>, 'staticmethod': <type 'staticmethod'>, 'SystemError': <type 'exceptions.SystemError'>, 'BaseException': <type 'exceptions.BaseException'>, 'pow': <built-in function pow>, 'RuntimeError': <type 'exceptions.RuntimeError'>, 'float': <type 'float'>, 'MemoryError': <type 'exceptions.MemoryError'>, 'StopIteration': <type 'exceptions.StopIteration'>, 'globals': <built-in function globals>, 'divmod': <built-in function divmod>, 'enumerate': <type 'enumerate'>, 'apply': <built-in function apply>, 'LookupError': <type 'exceptions.LookupError'>, 'open': <built-in function open>, 'quit': Use quit() or Ctrl-D (i.e. EOF) to exit, 'basestring': <type 'basestring'>, 'UnicodeError': <type 'exceptions.UnicodeError'>, 'zip': <built-in function zip>, 'hex': <built-in function hex>, 'long': <type 'long'>, 'next': <built-in function next>, 'ImportError': <type 'exceptions.ImportError'>, 'chr': <built-in function chr>, 'xrange': <type 'xrange'>, 'type': <type 'type'>, '__doc__': "Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.", 'Exception': <type 'exceptions.Exception'>, 'tuple': <type 'tuple'>, 'UnicodeTranslateError': <type 'exceptions.UnicodeTranslateError'>, 'reversed': <type 'reversed'>, 'UnicodeEncodeError': <type 'exceptions.UnicodeEncodeError'>, 'IOError': <type 'exceptions.IOError'>, 'hasattr': <built-in function hasattr>, 'delattr': <built-in function delattr>, 'setattr': <built-in function setattr>, 'raw_input': <built-in function raw_input>, 'SyntaxWarning': <type 'exceptions.SyntaxWarning'>, 'compile': <built-in function compile>, 'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'str': <type 'str'>, 'property': <type 'property'>, 'GeneratorExit': <type 'exceptions.GeneratorExit'>, 'int': <type 'int'>, '__import__': <built-in function __import__>, 'KeyError': <type 'exceptions.KeyError'>, 'coerce': <built-in function coerce>, 'PendingDeprecationWarning': <type 'exceptions.PendingDeprecationWarning'>, 'file': <type 'file'>, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, 'unichr': <built-in function unichr>, 'id': <built-in function id>, 'OSError': <type 'exceptions.OSError'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'min': <built-in function min>, 'UnicodeWarning': <type 'exceptions.UnicodeWarning'>, 'execfile': <built-in function execfile>, 'any': <built-in function any>, 'complex': <type 'complex'>, 'bool': <type 'bool'>, 'ValueError': <type 'exceptions.ValueError'>, 'NotImplemented': NotImplemented, 'map': <built-in function map>, 'buffer': <type 'buffer'>, 'max': <built-in function max>, 'object': <type 'object'>, 'TabError': <type 'exceptions.TabError'>, 'callable': <built-in function callable>, 'ZeroDivisionError': <type 'exceptions.ZeroDivisionError'>, 'eval': <built-in function eval>, '__debug__': True, 'IndentationError': <type 'exceptions.IndentationError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'classmethod': <type 'classmethod'>, 'UnboundLocalError': <type 'exceptions.UnboundLocalError'>, 'NotImplementedError': <type 'exceptions.NotImplementedError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'OverflowError': <type 'exceptions.OverflowError'>}, '__file__': '/home/dat-asset-227/code/sim42/ollin/CES/PengRobinson.pyc', 'Flash': <function Flash at 0x7fae39c32b18>, 'sqrt': <ufunc 'sqrt'>, '__package__': None, 'EOS': <class ollin.EOS.eos.EOS at 0x7fae39c2bce8>, 'R': 8.314, 'MixingRules': <module 'ollin.Tools.MixingRules' from '/home/dat-asset-227/code/sim42/ollin/Tools/MixingRules.pyc'>, 'exp': <ufunc 'exp'>, 'lagrange': <function lagrange at 0x7fae39c329b0>, '__name__': 'PengRobinson', 'array': <function array at 0x7fae39c23410>, 'Thermo': <class ollin.Thermodinamics.Thermodinamic.Thermo at 0x7fae39c2bdb8>, '__doc__': None, 'absolute': <ufunc 'absolute'>})
+('Needed public variables from LoadPresureModel() are as::', ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C'])
+('ThermoCase class EOS attribute::', {'EOS': <ollin.EOS.eos.EOS instance at 0x7fae39c3c248>, 'Thermo': <ollin.Thermodinamics.Thermodinamic.Thermo instance at 0x7fae39c3c3b0>, 'PV': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7fae46e0d170>, 'TagsOfConst': ['TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF']})
+('Needed public variables after LoadPresureModel() and LoadEOSModel() are as::', ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'])
+############################ ENDS exec of LoadEOSModel(model=PengRobinson )###########################
+{'Load': 0, 'NamePresureVap': 'ANTOINE', 'NameEOS': 'PengRobinson', 'Const': {}, 'library': [], 'EOS': <PengRobinson.Model instance at 0x7fae39c3c2d8>, 'PublicVars': ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'], 'Cases': [], 'PresureVap': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7fae46e0d170>}
+
+    Beta term server administrator
+    
+('items::', ['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE'])
+('case::', 'PR')
+From DataBase.py we are in Dates() where items=IdKey and key=METHANE
+#######################################################################
+x_key METHANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(61,)
+#######################################################################
+result [[61]]
+component 61  METHANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=ETHANE
+#######################################################################
+x_key ETHANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(100,)
+#######################################################################
+result [[100]]
+component 100  ETHANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=PROPANE
+#######################################################################
+x_key PROPANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(132,)
+#######################################################################
+result [[132]]
+component 132  PROPANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=ISOBUTANE
+#######################################################################
+x_key ISOBUTANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(182,)
+#######################################################################
+result [[182]]
+component 182  ISOBUTANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-BUTANE
+#######################################################################
+x_key N-BUTANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(181,)
+#######################################################################
+result [[181]]
+component 181  N-BUTANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-PENTANE
+#######################################################################
+x_key N-PENTANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(223,)
+#######################################################################
+result [[223]]
+component 223  N-PENTANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-HEXANE
+#######################################################################
+x_key N-HEXANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(271,)
+#######################################################################
+result [[271]]
+component 271  N-HEXANE was add to PengRobinson
+From DataBase.py we are in Dates() where items=IdKey and key=N-HEPTANE
+#######################################################################
+x_key N-HEPTANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(308,)
+#######################################################################
+result [[308]]
+component 308  N-HEPTANE was add to PengRobinson
+('self.TheCase[case].library', ['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE'])
+################ In LoadConst, Load information from data base for the Model (case)
+('self.TheCase.keys()', ['PR'])
+From DataBase.py we are in Dates() where items=MoleWt and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(16.04,)
+x_key ETHANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(30.07,)
+x_key PROPANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(44.1,)
+x_key ISOBUTANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(58.12,)
+x_key N-BUTANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(58.12,)
+x_key N-PENTANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(72.15,)
+x_key N-HEXANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(86.18,)
+x_key N-HEPTANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(100.21,)
+#######################################################################
+result [[16.04, 30.07, 44.1, 58.12, 58.12, 72.15, 86.18, 100.21]]
+From DataBase.py we are in Dates() where items=LIQDEN and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(425,)
+x_key ETHANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(548,)
+x_key PROPANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(582,)
+x_key ISOBUTANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(557,)
+x_key N-BUTANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(579,)
+x_key N-PENTANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(626,)
+x_key N-HEXANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(659,)
+x_key N-HEPTANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(684,)
+#######################################################################
+result [[425, 548, 582, 557, 579, 626, 659, 684]]
+From DataBase.py we are in Dates() where items=ANT_A and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.22,)
+x_key ETHANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.66,)
+x_key PROPANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.73,)
+x_key ISOBUTANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.54,)
+x_key N-BUTANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.68,)
+x_key N-PENTANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.83,)
+x_key N-HEXANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.84,)
+x_key N-HEPTANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.87,)
+#######################################################################
+result [[15.22, 15.66, 15.73, 15.54, 15.68, 15.83, 15.84, 15.87]]
+From DataBase.py we are in Dates() where items=ANT_B and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(897.84,)
+x_key ETHANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(1511.42,)
+x_key PROPANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(1872.46,)
+x_key ISOBUTANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2032.73,)
+x_key N-BUTANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2154.9,)
+x_key N-PENTANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2477.07,)
+x_key N-HEXANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2697.55,)
+x_key N-HEPTANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(2911.32,)
+#######################################################################
+result [[897.84, 1511.42, 1872.46, 2032.73, 2154.9, 2477.07, 2697.55, 2911.32]]
+From DataBase.py we are in Dates() where items=ANT_C and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-7.16,)
+x_key ETHANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-17.16,)
+x_key PROPANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-25.16,)
+x_key ISOBUTANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-33.15,)
+x_key N-BUTANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-34.42,)
+x_key N-PENTANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-39.94,)
+x_key N-HEXANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-48.78,)
+x_key N-HEPTANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-56.51,)
+#######################################################################
+result [[-7.16, -17.16, -25.16, -33.15, -34.42, -39.94, -48.78, -56.51]]
+From DataBase.py we are in Dates() where items=TC and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(190.6,)
+x_key ETHANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(305.4,)
+x_key PROPANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(369.8,)
+x_key ISOBUTANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(408.1,)
+x_key N-BUTANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(425.2,)
+x_key N-PENTANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(469.6,)
+x_key N-HEXANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(507.4,)
+x_key N-HEPTANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(540.2,)
+#######################################################################
+result [[190.6, 305.4, 369.8, 408.1, 425.2, 469.6, 507.4, 540.2]]
+From DataBase.py we are in Dates() where items=PC and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(4600.155,)
+x_key ETHANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(4883.865,)
+x_key PROPANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(4245.5175,)
+x_key ISOBUTANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(3647.7,)
+x_key N-BUTANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(3799.6875,)
+x_key N-PENTANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(3374.1225,)
+x_key N-HEXANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(2968.8225,)
+x_key N-HEPTANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(2735.775,)
+#######################################################################
+result [[4600.155, 4883.865, 4245.5175, 3647.7, 3799.6875, 3374.1225, 2968.8225, 2735.775]]
+From DataBase.py we are in Dates() where items=VC and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.099,)
+x_key ETHANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.148,)
+x_key PROPANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.203,)
+x_key ISOBUTANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.263,)
+x_key N-BUTANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.255,)
+x_key N-PENTANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.304,)
+x_key N-HEXANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.37,)
+x_key N-HEPTANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.432,)
+#######################################################################
+result [[0.099, 0.148, 0.203, 0.263, 0.255, 0.304, 0.37, 0.432]]
+From DataBase.py we are in Dates() where items=ZC and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.29,)
+x_key ETHANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.29,)
+x_key PROPANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.28,)
+x_key ISOBUTANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.28,)
+x_key N-BUTANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.27,)
+x_key N-PENTANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.26,)
+x_key N-HEXANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.26,)
+x_key N-HEPTANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.26,)
+#######################################################################
+result [[0.29, 0.29, 0.28, 0.28, 0.27, 0.26, 0.26, 0.26]]
+From DataBase.py we are in Dates() where items=PR_A and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(249.593795,)
+x_key ETHANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(603.5800434,)
+x_key PROPANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(1018.037171,)
+x_key ISOBUTANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(1443.027254,)
+x_key N-BUTANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(1503.831192,)
+x_key N-PENTANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(2065.645483,)
+x_key N-HEXANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(2740.798766,)
+x_key N-HEPTANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(3371.236655,)
+#######################################################################
+result [[249.593795, 603.5800434, 1018.037171, 1443.027254, 1503.831192, 2065.645483, 2740.798766, 3371.236655]]
+From DataBase.py we are in Dates() where items=PR_B and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.026799256,)
+x_key ETHANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.040446197,)
+x_key PROPANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.056338929,)
+x_key ISOBUTANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.072363538,)
+x_key N-BUTANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.072379851,)
+x_key N-PENTANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.090020113,)
+x_key N-HEXANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.110544857,)
+x_key N-HEPTANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.127716355,)
+#######################################################################
+result [[0.026799256, 0.040446197, 0.056338929, 0.072363538, 0.072379851, 0.090020113, 0.110544857, 0.127716355]]
+From DataBase.py we are in Dates() where items=OMEGA and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.01,)
+x_key ETHANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.1,)
+x_key PROPANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.15,)
+x_key ISOBUTANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.18,)
+x_key N-BUTANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.19,)
+x_key N-PENTANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.25,)
+x_key N-HEXANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.3,)
+x_key N-HEPTANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.35,)
+#######################################################################
+result [[0.01, 0.1, 0.15, 0.18, 0.19, 0.25, 0.3, 0.35]]
+From DataBase.py we are in Dates() where items=CP_A and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(19.2509064,)
+x_key ETHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(5.4093456,)
+x_key PROPANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-4.2244812,)
+x_key ISOBUTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-1.3900176,)
+x_key N-BUTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(9.4872888,)
+x_key N-PENTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-3.6257688,)
+x_key N-HEXANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-4.4128872,)
+x_key N-HEPTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-5.1455772,)
+#######################################################################
+result [[19.2509064, 5.4093456, -4.2244812, -1.3900176, 9.4872888, -3.6257688, -4.4128872, -5.1455772]]
+From DataBase.py we are in Dates() where items=CP_B and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.05212566,)
+x_key ETHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.178106472,)
+x_key PROPANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.30626442,)
+x_key ISOBUTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.384725052,)
+x_key N-BUTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.331301484,)
+x_key N-PENTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.48734352,)
+x_key N-HEXANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.5819652,)
+x_key N-HEPTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.6761682,)
+#######################################################################
+result [[0.05212566, 0.178106472, 0.30626442, 0.384725052, 0.331301484, 0.48734352, 0.5819652, 0.6761682]]
+From DataBase.py we are in Dates() where items=CP_C and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(1.2e-05,)
+x_key ETHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-6.94e-05,)
+x_key PROPANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000158638,)
+x_key ISOBUTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000184596,)
+x_key N-BUTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000110825,)
+x_key N-PENTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000258032,)
+x_key N-HEXANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000311875,)
+x_key N-HEPTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000365089,)
+#######################################################################
+result [[1.2e-05, -6.94e-05, -0.000158638, -0.000184596, -0.000110825, -0.000258032, -0.000311875, -0.000365089]]
+From DataBase.py we are in Dates() where items=CP_D and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-1.1299999999999999e-08,)
+x_key ETHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(8.710000000000002e-09,)
+x_key PROPANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(3.21e-08,)
+x_key ISOBUTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(2.8999999999999998e-08,)
+x_key N-BUTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-2.8199999999999998e-09,)
+x_key N-PENTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(5.3e-08,)
+x_key N-HEXANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(6.49e-08,)
+x_key N-HEPTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(7.66e-08,)
+#######################################################################
+result [[-1.1299999999999999e-08, 8.710000000000002e-09, 3.21e-08, 2.8999999999999998e-08, -2.8199999999999998e-09, 5.3e-08, 6.49e-08, 7.66e-08]]
+From DataBase.py we are in Dates() where items=HV and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(8183.239,)
+x_key ETHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(14713.087,)
+x_key PROPANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(18781.6846,)
+x_key ISOBUTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(21305.722,)
+x_key N-BUTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(22402.4016,)
+x_key N-PENTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(257.84528,)
+x_key N-HEXANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(28865.2768,)
+x_key N-HEPTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(31711.6208,)
+#######################################################################
+result [[8183.239, 14713.087, 18781.6846, 21305.722, 22402.4016, 257.84528, 28865.2768, 31711.6208]]
+From DataBase.py we are in Dates() where items=TB and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(111.7,)
+x_key ETHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(184.5,)
+x_key PROPANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(231.1,)
+x_key ISOBUTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(261.3,)
+x_key N-BUTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(272.7,)
+x_key N-PENTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(309.2,)
+x_key N-HEXANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(341.9,)
+x_key N-HEPTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(371.6,)
+#######################################################################
+result [[111.7, 184.5, 231.1, 261.3, 272.7, 309.2, 341.9, 371.6]]
+From DataBase.py we are in Dates() where items=DELHF and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-74883.962,)
+x_key ETHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-84720.592,)
+x_key PROPANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-103891.556,)
+x_key ISOBUTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-134573.47,)
+x_key N-BUTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-126201.87,)
+x_key N-PENTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-146503,)
+x_key N-HEXANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-167264.568,)
+x_key N-HEPTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-187858.704,)
+#######################################################################
+result [[-74883.962, -84720.592, -103891.556, -134573.47, -126201.87, -146503, -167264.568, -187858.704]]
+From DataBase.py we are in Dates() where items=DELGF and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-50857.47,)
+x_key ETHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-32942.246,)
+x_key PROPANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-23482.338,)
+x_key ISOBUTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-20887.142,)
+x_key N-BUTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-17161.78,)
+x_key N-PENTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-8371.6,)
+x_key N-HEXANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-251.148,)
+x_key N-HEPTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(7994.878,)
+#######################################################################
+result [[-50857.47, -32942.246, -23482.338, -20887.142, -17161.78, -8371.6, -251.148, 7994.878]]
+From DataBase.py we are in Dates() where items=CP_A and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(19.2509064,)
+x_key ETHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(5.4093456,)
+x_key PROPANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-4.2244812,)
+x_key ISOBUTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-1.3900176,)
+x_key N-BUTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(9.4872888,)
+x_key N-PENTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-3.6257688,)
+x_key N-HEXANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-4.4128872,)
+x_key N-HEPTANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(-5.1455772,)
+#######################################################################
+result [[19.2509064, 5.4093456, -4.2244812, -1.3900176, 9.4872888, -3.6257688, -4.4128872, -5.1455772]]
+From DataBase.py we are in Dates() where items=CP_B and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.05212566,)
+x_key ETHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.178106472,)
+x_key PROPANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.30626442,)
+x_key ISOBUTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.384725052,)
+x_key N-BUTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.331301484,)
+x_key N-PENTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.48734352,)
+x_key N-HEXANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.5819652,)
+x_key N-HEPTANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.6761682,)
+#######################################################################
+result [[0.05212566, 0.178106472, 0.30626442, 0.384725052, 0.331301484, 0.48734352, 0.5819652, 0.6761682]]
+From DataBase.py we are in Dates() where items=CP_C and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(1.2e-05,)
+x_key ETHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-6.94e-05,)
+x_key PROPANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000158638,)
+x_key ISOBUTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000184596,)
+x_key N-BUTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000110825,)
+x_key N-PENTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000258032,)
+x_key N-HEXANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000311875,)
+x_key N-HEPTANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(-0.000365089,)
+#######################################################################
+result [[1.2e-05, -6.94e-05, -0.000158638, -0.000184596, -0.000110825, -0.000258032, -0.000311875, -0.000365089]]
+From DataBase.py we are in Dates() where items=CP_D and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-1.1299999999999999e-08,)
+x_key ETHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(8.710000000000002e-09,)
+x_key PROPANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(3.21e-08,)
+x_key ISOBUTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(2.8999999999999998e-08,)
+x_key N-BUTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-2.8199999999999998e-09,)
+x_key N-PENTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(5.3e-08,)
+x_key N-HEXANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(6.49e-08,)
+x_key N-HEPTANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(7.66e-08,)
+#######################################################################
+result [[-1.1299999999999999e-08, 8.710000000000002e-09, 3.21e-08, 2.8999999999999998e-08, -2.8199999999999998e-09, 5.3e-08, 6.49e-08, 7.66e-08]]
+From DataBase.py we are in Dates() where items=HV and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(8183.239,)
+x_key ETHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(14713.087,)
+x_key PROPANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(18781.6846,)
+x_key ISOBUTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(21305.722,)
+x_key N-BUTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(22402.4016,)
+x_key N-PENTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(257.84528,)
+x_key N-HEXANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(28865.2768,)
+x_key N-HEPTANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(31711.6208,)
+#######################################################################
+result [[8183.239, 14713.087, 18781.6846, 21305.722, 22402.4016, 257.84528, 28865.2768, 31711.6208]]
+From DataBase.py we are in Dates() where items=TB and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(111.7,)
+x_key ETHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(184.5,)
+x_key PROPANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(231.1,)
+x_key ISOBUTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(261.3,)
+x_key N-BUTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(272.7,)
+x_key N-PENTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(309.2,)
+x_key N-HEXANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(341.9,)
+x_key N-HEPTANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(371.6,)
+#######################################################################
+result [[111.7, 184.5, 231.1, 261.3, 272.7, 309.2, 341.9, 371.6]]
+From DataBase.py we are in Dates() where items=DELHF and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-74883.962,)
+x_key ETHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-84720.592,)
+x_key PROPANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-103891.556,)
+x_key ISOBUTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-134573.47,)
+x_key N-BUTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-126201.87,)
+x_key N-PENTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-146503,)
+x_key N-HEXANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-167264.568,)
+x_key N-HEPTANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-187858.704,)
+#######################################################################
+result [[-74883.962, -84720.592, -103891.556, -134573.47, -126201.87, -146503, -167264.568, -187858.704]]
+From DataBase.py we are in Dates() where items=DELGF and key=['METHANE', 'ETHANE', 'PROPANE', 'ISOBUTANE', 'N-BUTANE', 'N-PENTANE', 'N-HEXANE', 'N-HEPTANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-50857.47,)
+x_key ETHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-32942.246,)
+x_key PROPANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-23482.338,)
+x_key ISOBUTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-20887.142,)
+x_key N-BUTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-17161.78,)
+x_key N-PENTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-8371.6,)
+x_key N-HEXANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-251.148,)
+x_key N-HEPTANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(7994.878,)
+#######################################################################
+result [[-50857.47, -32942.246, -23482.338, -20887.142, -17161.78, -8371.6, -251.148, 7994.878]]
+
+Process finished with exit code 0

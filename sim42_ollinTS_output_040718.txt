@@ -1,0 +1,289 @@
+/home/dat-asset-227/envs/sim42_using_py2/bin/python /home/dat-asset-227/code/sim42/ollin/Example/myTestExp.py
+################### STARTS ACCESSING DATABASE #######################
+('Database path (dBpath) in local: ', '/home/dat-asset-227/code/sim42/ollin/DataBase/')
+('Database name (dBname): ', 'data.db')
+
+Loading Data Base data.db
+('Db connetion obj: ', <sqlite3.Connection object at 0x7f77ec6eb200>)
+('Cursor Object creation is done: ', <sqlite3.Cursor object at 0x7f77ec71c180>)
+\..........
+################### ENDS ACCESSING DATABASE #######################
+OllinTS has been loaded
+
+('Given thermodynamic model Name as : ', 'PR')
+Equation Of State(EOS) for thermodynamic model (PR) as:  PR
+('Pressure Vapor(PV) equation: ', 'ANTOINE')
+###### AddModel() for (PR) ######
+########################### STARTS FINDING OF PUBLIC VARS(Db cols name) FOR PV MODEL (ANTOINE) AND EOS MODEL(PR)################
+############################ STARTS exec of LoadPresureModel(PV=ANTOINE )###########################
+('load equation for pressure model: ', 'ANTOINE')
+('PresureVapor.Equation.keys()', ['HARLACHER', 'ANTOINE'])
+('I will call ', 'Antoine Equation', '()')
+('Needed variables for PV model:', 'Antoine Equation', '() as follows:', ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C'])
+############################ ENDS exec of LoadPresureModel(PV=ANTOINE )###########################
+############################ STARTS exec of LoadEOSModel(model=PengRobinson )###########################
+('LoadEOSModel module::', <module 'ollin.CES' from '/home/dat-asset-227/code/sim42/ollin/CES/__init__.pyc'>)
+('LoadEOSModel model::', 'PengRobinson')
+('LoadEOSModel module path::', ['/home/dat-asset-227/code/sim42/ollin/CES'])
+('LoadEOSModel module fullName::', 'ollin.CES.PengRobinson')
+('Calling of EOS model from lang as :', <class PengRobinson.Model at 0x7f77ec7393f8>)
+('Needed public variables from LoadPresureModel() are as::', ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C'])
+('ThermoCase class EOS attribute::', {'EOS': <ollin.EOS.eos.EOS instance at 0x7f77ec73a320>, 'Thermo': <ollin.Thermodinamics.Thermodinamic.Thermo instance at 0x7f77ec73a440>, 'PV': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f77ec72bc20>, 'TagsOfConst': ['TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF']})
+('Needed public variables after LoadPresureModel() and LoadEOSModel() are as::', ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'])
+############################ ENDS exec of LoadEOSModel(model=PengRobinson )###########################
+### ThermoCase dict() for Given thermodynamic model Name (PR) as follows:
+{'Load': 0, 'NamePresureVap': 'ANTOINE', 'NameEOS': 'PengRobinson', 'Const': {}, 'library': [], 'EOS': <PengRobinson.Model instance at 0x7f77ec72bd40>, 'PublicVars': ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'], 'Cases': [], 'PresureVap': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f77ec72bc20>}
+{'Load': 0, 'NamePresureVap': 'ANTOINE', 'NameEOS': 'PengRobinson', 'Const': {}, 'library': [], 'EOS': <PengRobinson.Model instance at 0x7f77ec72bd40>, 'PublicVars': ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'], 'Cases': [], 'PresureVap': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f77ec72bc20>}
+('################### STARTING OF Add() WITH ITEMS AND CASE AS ', ['METHANE'], 'PR')
+('items::', ['METHANE'])
+('case::', 'PR')
+From DataBase.py we are in Dates() where items=IdKey and key=METHANE
+#######################################################################
+x_key METHANE
+SELECT SELECT NUMERO FROM compo WHERE NAME=:item;
+(61,)
+#######################################################################
+result [[61]]
+component 61  METHANE was add to PengRobinson
+('Final library for case (PR) as : ', ['METHANE'])
+################ In LoadConst, Load information from data base for the Model (case)
+('self.TheCase.keys()', ['PR'])
+('case: ', 'PR')
+('self.TheCase[case].library: ', ['METHANE'])
+From DataBase.py we are in Dates() where items=MoleWt and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT MOLE_WT FROM compo WHERE NAME=:item;
+(16.04,)
+#######################################################################
+result [[16.04]]
+From DataBase.py we are in Dates() where items=LIQDEN and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT LIQDEN FROM compo WHERE NAME=:item;
+(425,)
+#######################################################################
+result [[425]]
+From DataBase.py we are in Dates() where items=ANT_A and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ANTOINE_VP_A FROM compo WHERE NAME=:item;
+(15.22,)
+#######################################################################
+result [[15.22]]
+From DataBase.py we are in Dates() where items=ANT_B and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ANTOINE_VP_B FROM compo WHERE NAME=:item;
+(897.84,)
+#######################################################################
+result [[897.84]]
+From DataBase.py we are in Dates() where items=ANT_C and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ANTOINE_VP_C FROM compo WHERE NAME=:item;
+(-7.16,)
+#######################################################################
+result [[-7.16]]
+From DataBase.py we are in Dates() where items=TC and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT TC FROM compo WHERE NAME=:item;
+(190.6,)
+#######################################################################
+result [[190.6]]
+From DataBase.py we are in Dates() where items=PC and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT PC FROM compo WHERE NAME=:item;
+(4600.155,)
+#######################################################################
+result [[4600.155]]
+From DataBase.py we are in Dates() where items=VC and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT VC FROM compo WHERE NAME=:item;
+(0.099,)
+#######################################################################
+result [[0.099]]
+From DataBase.py we are in Dates() where items=ZC and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT ZC FROM compo WHERE NAME=:item;
+(0.29,)
+#######################################################################
+result [[0.29]]
+From DataBase.py we are in Dates() where items=PR_A and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT PR_ac FROM compo WHERE NAME=:item;
+(249.593795,)
+#######################################################################
+result [[249.593795]]
+From DataBase.py we are in Dates() where items=PR_B and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT PR_b FROM compo WHERE NAME=:item;
+(0.026799256,)
+#######################################################################
+result [[0.026799256]]
+From DataBase.py we are in Dates() where items=OMEGA and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT OMEGA FROM compo WHERE NAME=:item;
+(0.01,)
+#######################################################################
+result [[0.01]]
+From DataBase.py we are in Dates() where items=CP_A and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(19.2509064,)
+#######################################################################
+result [[19.2509064]]
+From DataBase.py we are in Dates() where items=CP_B and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.05212566,)
+#######################################################################
+result [[0.05212566]]
+From DataBase.py we are in Dates() where items=CP_C and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(1.2e-05,)
+#######################################################################
+result [[1.2e-05]]
+From DataBase.py we are in Dates() where items=CP_D and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-1.1299999999999999e-08,)
+#######################################################################
+result [[-1.1299999999999999e-08]]
+From DataBase.py we are in Dates() where items=HV and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(8183.239,)
+#######################################################################
+result [[8183.239]]
+From DataBase.py we are in Dates() where items=TB and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(111.7,)
+#######################################################################
+result [[111.7]]
+From DataBase.py we are in Dates() where items=DELHF and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-74883.962,)
+#######################################################################
+result [[-74883.962]]
+From DataBase.py we are in Dates() where items=DELGF and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-50857.47,)
+#######################################################################
+result [[-50857.47]]
+From DataBase.py we are in Dates() where items=CP_A and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_A FROM compo WHERE NAME=:item;
+(19.2509064,)
+#######################################################################
+result [[19.2509064]]
+From DataBase.py we are in Dates() where items=CP_B and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_B FROM compo WHERE NAME=:item;
+(0.05212566,)
+#######################################################################
+result [[0.05212566]]
+From DataBase.py we are in Dates() where items=CP_C and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_C FROM compo WHERE NAME=:item;
+(1.2e-05,)
+#######################################################################
+result [[1.2e-05]]
+From DataBase.py we are in Dates() where items=CP_D and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT CP_D FROM compo WHERE NAME=:item;
+(-1.1299999999999999e-08,)
+#######################################################################
+result [[-1.1299999999999999e-08]]
+From DataBase.py we are in Dates() where items=HV and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT HV FROM compo WHERE NAME=:item;
+(8183.239,)
+#######################################################################
+result [[8183.239]]
+From DataBase.py we are in Dates() where items=TB and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT TB FROM compo WHERE NAME=:item;
+(111.7,)
+#######################################################################
+result [[111.7]]
+From DataBase.py we are in Dates() where items=DELHF and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_HG FROM compo WHERE NAME=:item;
+(-74883.962,)
+#######################################################################
+result [[-74883.962]]
+From DataBase.py we are in Dates() where items=DELGF and key=['METHANE']
+#######################################################################
+x_key METHANE
+SELECT SELECT DEL_GF FROM compo WHERE NAME=:item;
+(-50857.47,)
+#######################################################################
+result [[-50857.47]]
+TheCase info for case PR as follows:
+{'Load': 1, 'NamePresureVap': 'ANTOINE', 'NameEOS': 'PengRobinson', 'Const': {'PR_B': array([ 0.02679926]), 'VC': array([ 0.099]), 'DELHF': array([-74883.962]), 'DELGF': array([-50857.47]), 'MoleWt': array([ 16.04]), 'CP_D': array([ -1.13000000e-08]), 'TB': array([ 111.7]), 'HV': array([ 8183.239]), 'LIQDEN': array([425]), 'PR_A': array([ 249.593795]), 'ZC': array([ 0.29]), 'PC': array([ 4600.155]), 'ANT_C': array([-7.16]), 'ANT_B': array([ 897.84]), 'ANT_A': array([ 15.22]), 'CP_A': array([ 19.2509064]), 'CP_B': array([ 0.05212566]), 'CP_C': array([  1.20000000e-05]), 'OMEGA': array([ 0.01]), 'TC': array([ 190.6])}, 'library': ['METHANE'], 'EOS': <PengRobinson.Model instance at 0x7f77ec72bd40>, 'PublicVars': ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'], 'Cases': [], 'PresureVap': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f77ec72bc20>}
+################ Completion of LoadConst ###########################
+{'Load': 1, 'NamePresureVap': 'ANTOINE', 'NameEOS': 'PengRobinson', 'Const': {'PR_B': array([ 0.02679926]), 'VC': array([ 0.099]), 'DELHF': array([-74883.962]), 'DELGF': array([-50857.47]), 'MoleWt': array([ 16.04]), 'CP_D': array([ -1.13000000e-08]), 'TB': array([ 111.7]), 'HV': array([ 8183.239]), 'LIQDEN': array([425]), 'PR_A': array([ 249.593795]), 'ZC': array([ 0.29]), 'PC': array([ 4600.155]), 'ANT_C': array([-7.16]), 'ANT_B': array([ 897.84]), 'ANT_A': array([ 15.22]), 'CP_A': array([ 19.2509064]), 'CP_B': array([ 0.05212566]), 'CP_C': array([  1.20000000e-05]), 'OMEGA': array([ 0.01]), 'TC': array([ 190.6])}, 'library': ['METHANE'], 'EOS': <PengRobinson.Model instance at 0x7f77ec72bd40>, 'PublicVars': ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'], 'Cases': [], 'PresureVap': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f77ec72bc20>}
+############# calling of Stream() from myTestExp.py ####################
+Stream() obj dict: 
+{'Case': <ollin.Administrator.ThemoObj.ThermoObj instance at 0x7f77ec76bd40>, 'MassFraction': None, 'MassFlowi': None, 'Energy': None, 'IN': None, 'MassFlow': None, 'Solve': 0, 'MoleFlow': None, 'MoleFlowi': None, 'Model': <ollin.Administrator.ThermoCase.ThermoCase instance at 0x7f77ec72bb90>, 'OUT': None}
+ThermoCase Model attribute from Stream() obj: 
+{'Load': 1, 'NamePresureVap': 'ANTOINE', 'NameEOS': 'PengRobinson', 'Const': {'PR_B': array([ 0.02679926]), 'VC': array([ 0.099]), 'DELHF': array([-74883.962]), 'DELGF': array([-50857.47]), 'MoleWt': array([ 16.04]), 'CP_D': array([ -1.13000000e-08]), 'TB': array([ 111.7]), 'HV': array([ 8183.239]), 'LIQDEN': array([425]), 'PR_A': array([ 249.593795]), 'ZC': array([ 0.29]), 'PC': array([ 4600.155]), 'ANT_C': array([-7.16]), 'ANT_B': array([ 897.84]), 'ANT_A': array([ 15.22]), 'CP_A': array([ 19.2509064]), 'CP_B': array([ 0.05212566]), 'CP_C': array([  1.20000000e-05]), 'OMEGA': array([ 0.01]), 'TC': array([ 190.6])}, 'library': ['METHANE'], 'EOS': <PengRobinson.Model instance at 0x7f77ec72bd40>, 'PublicVars': ['MoleWt', 'LIQDEN', 'ANT_A', 'ANT_B', 'ANT_C', 'TC', 'PC', 'VC', 'ZC', 'PR_A', 'PR_B', 'OMEGA', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF', 'CP_A', 'CP_B', 'CP_C', 'CP_D', 'HV', 'TB', 'DELHF', 'DELGF'], 'Cases': [], 'PresureVap': <ollin.Thermodinamics.PresureVapor.Antoine instance at 0x7f77ec72bc20>}
+Thermodynamic Case attribute from Stream() obj: 
+{'IdH': 0, 'Vars': ('P', 'T', 'Mol_WT', 'FracVap', 'Z', 'Zv', 'Zl', 'CpG', 'CpL', 'H', 'Hv', 'CoeFugOl', 'CoeFugOv', 'CoeFugOl', 'CoeFugMl', 'CoeFugMl', 'yf', 'xf', 'Pvi', 'Ki', 'fi', 'Zi', 'Zli', 'Zvi'), 'IdT': 0, 'ExtProp': {}, 'IdP': 0, 'Prop': {'Mol_WT': None, 'H': None, 'xf': None, 'yf': None, 'P': None, 'T': None, 'x': None, 'FracVap': None}, 'Solve': 0, 'library': [], 'EOSVars': {}, 'IdF': 0, 'Model': None}
+Set Thermodynamic x property: 
+MassFraction for Stream() obj and mole fraction of the Thermodynamic Case obj as ThemoObj() are created
+('Mass Fraction: ', array([ 0.13940598,  0.1114829 ,  0.10661963,  0.13919656,  0.07166459,
+        0.03678401,  0.05258382,  0.08212644,  0.08584021,  0.07906886,
+        0.03870604,  0.05652097]))
+('Mole Fraction: ', array([ 0.13940598,  0.1114829 ,  0.10661963,  0.13919656,  0.07166459,
+        0.03678401,  0.05258382,  0.08212644,  0.08584021,  0.07906886,
+        0.03870605,  0.05652097], dtype=float32))
+Set Temperature of Thermodynamic Case obj as ThemoObj()
+('Temperature: ', 322)
+Set Pressure of Thermodynamic Case obj as ThemoObj()
+('Pressure: ', 1861)
+Set MoleFlow of Stream() obj
+('MoleFlow: ', 455)
+Defined Temperature
+...Defined Presure
+
+ ..::Resumen ::..
+
+FracVap      = 1.0000
+Press  KPa   = 1861.000
+Temp   K     = 322.000
+MoleFlow Kgmol/hr= 455.000
+MassFlow Kg/hr= 7298.200
+Enthalpy KJ/Kgmol  =  8925.29497691
+Entropy  KJ/KgmolK =  148.401675667
+MolWt     Kg/kgmol = 16.040
+Z            = 1.048
+
+
